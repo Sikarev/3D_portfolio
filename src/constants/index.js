@@ -261,6 +261,12 @@ import {
       source_code_link: "https://github.com/",
     },
   ];
-  
-  export { services, technologies, experiences, testimonials, projects };
+
+  const emailCredentials = {
+    publicKey: import.meta.env.VITE_EMAIL_JS_API_KEY,
+    templateId: import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID,
+    serviceId: import.meta.env.VITE_EMAIL_JS_SERVICE_ID,
+  }
+
+  export { services, technologies, experiences, testimonials, projects, emailCredentials };
   
