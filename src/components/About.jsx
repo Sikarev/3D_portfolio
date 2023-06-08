@@ -46,10 +46,10 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, at consequuntur corporis culpa delectus dignissimos doloremque et facere id non omnis perferendis porro qui quibusdam quidem quod rem ut voluptatibus!
+        JS/TS middle developer having experience in a fullstack development, mentoring and content creation.
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-10 sm:justify-between justify-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service}></ServiceCard>
         ))}
